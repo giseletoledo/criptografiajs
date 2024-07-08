@@ -20,6 +20,12 @@ body {
     filter:drop-shadow(0 0 10px white);
 }
 
+.material-symbols-outlined.title__crypto{
+    font-size: 30px;
+    color: #333;
+    vertical-align: middle;
+}
+
 .container {
     margin: 2rem auto;
     width: 80%;
