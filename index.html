@@ -26,7 +26,7 @@
                         </span>
                 </h1>
                 <textarea id="inputText" placeholder="Digite o texto aqui..." oninput="checkInput()"></textarea>
-                <small id="resultMessage"><span class="material-symbols-outlined">
+                <small id="resultMessage" class="container__input__mensagem"><span class="material-symbols-outlined">
                     error
                     </span>
                     Apenas letras minúsculas e sem acento.</small>
@@ -38,7 +38,7 @@
             </div>
             <div class="container__resultado">
                 <img id="noMessageImage" class="imagem__nao__encontrada" src="imagens/textoNaoEncontrado.png" alt="Nenhuma mensagem encontrada" style="display: block;">
-                <small id="outputText"><strong>Nenhuma mensagem encontrada.</strong><br/> Digite um texto que você deseja criptografar ou descriptografar.</small>
+                <small id="outputText" class="container__resultado__mensagem"><strong>Nenhuma mensagem encontrada.</strong><br/> Digite um texto que você deseja criptografar ou descriptografar.</small>
                 <button id="copyBtn" class="copyBtn" onclick="copyText()">Copiar</button>
             </div>
         </div>

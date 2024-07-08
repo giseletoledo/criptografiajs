@@ -61,8 +61,6 @@ header{
     margin: 5rem 2rem 2rem 2rem;
 }
 
-
-
 h1 {
     font-family: 'Chakra Petch', sans-serif;
     color: #333;
@@ -81,13 +79,19 @@ textarea {
     resize: none;
 }
 
-small {
+.container__input__mensagem {
     margin-bottom: 20px;
     text-align: center;
     word-break: break-word;
+    color:#ace8c5;
 }
 
-
+.container__resultado__mensagem {
+    margin-bottom: 20px;
+    text-align: center;
+    word-break: break-word;
+    color:#000000;
+}
 
 .container__botoes {
     display: flex;
@@ -136,7 +140,6 @@ button:hover:enabled {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 
 .container__resultado {
     width: 25%;
