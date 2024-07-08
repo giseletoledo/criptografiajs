@@ -10,15 +10,17 @@ body {
     background-color: #000000;
     background-image: url("imagens/backgroundCrypto.jpeg");
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     height: 100vh;
-    margin: 0;
+    
+}
+
+.logo{
+    width: 2rem;
 }
 
 .container {
-    margin-top: 5rem;
+    margin: 5rem auto;
     width: 80%;
     height: auto;
     display: flex;
@@ -48,7 +50,11 @@ body {
     margin-bottom: 20px;
 }
 
-img{
+header{
+    margin: 5rem;
+}
+
+#noMessageImage img{
     object-fit: cover;
     min-width: 80%;
 }
@@ -161,10 +167,14 @@ footer{
 
 /* Responsividade */
 @media (max-width: 768px) {
+    body{
+        margin-top: 1rem;
+    }
     .container {
         flex-direction: column;
         height: auto;
         padding: 10px;
+        align-items: flex-start;
     }
     .container__conteudo {
         flex-direction: column;
