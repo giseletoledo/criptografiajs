@@ -6,11 +6,16 @@ const decryptBtn = document.getElementById('decryptBtn');
 
 function checkInput() {
     const inputText = inputTextElement.value;
+    const hasInvalidChars = /[^a-z\s]/.test(inputText);
 
     if (inputText === '') {
-        resultMessage.textContent = 'Nenhuma mensagem encontrada';
         noMessageImage.style.display = 'block';
         outputText.textContent = 'Digite um texto que você deseja criptografar ou descriptografar.';
+        decryptBtn.disabled = true;
+    } else if (hasInvalidChars) {
+        resultMessage.textContent = 'Apenas letras minúsculas sem acentos são permitidas!';
+        noMessageImage.style.display = 'none';
+        outputText.textContent = '';
         decryptBtn.disabled = true;
     } else {
         resultMessage.textContent = '';
@@ -22,12 +27,12 @@ function checkInput() {
 function encryptText() {
     const inputText = inputTextElement.value;
 
-    if (/^[a-z]*$/.test(inputText)) {
+    if (/^[a-z\s]*$/.test(inputText)) {
         const encryptedText = transformText(inputText, 'encrypt');
         outputText.textContent = encryptedText;
         resultMessage.textContent = 'Texto criptografado com sucesso!';
     } else {
-        checkInput()
+        checkInput();
     }
 }
 
@@ -39,7 +44,7 @@ function decryptText() {
         outputText.textContent = decryptedText;
         resultMessage.textContent = 'Texto descriptografado com sucesso!';
     } else {
-        checkInput()
+        checkInput();
     }
 }
 
@@ -80,4 +85,3 @@ inputTextElement.addEventListener('input', checkInput);
 
 // Inicialização
 checkInput();
-
