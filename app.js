@@ -21,6 +21,11 @@ function encryptText() {
     const resultMessage = document.getElementById('resultMessage');
     const decryptBtn = document.getElementById('decryptBtn');
 
+    if (inputText === '') {
+        resultMessage.textContent = 'Favor digitar um texto';
+        return
+    }
+
      // Verificar se contém apenas letras minúsculas sem acentos
      if (/^[a-z]*$/.test(inputText)) {
         const encryptedText = transformText(inputText, 'encrypt');
