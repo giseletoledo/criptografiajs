@@ -105,6 +105,7 @@ button {
     transition: background-color 0.3s;
     margin-left: 1rem;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 button:disabled {
@@ -116,11 +117,25 @@ button:hover:enabled {
     background-color: #1d5b16;
 }
 
+.copyBtn {
+    margin-top: auto;
+    align-self: center;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
 .container__resultado {
     width: 25%;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
+    align-items: flex-start;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
     color: #333;
     padding: 20px;
