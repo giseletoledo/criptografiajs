@@ -1,6 +1,9 @@
 # Projeto Criptografia Simples
 Este projeto consiste em uma aplicação web simples para criptografar e descriptografar textos utilizando substituição de letras. Ele foi desenvolvido como parte do aprendizado em desenvolvimento web utilizando HTML, CSS e JavaScript.
 
+<img width="33%" src="https://github.com/giseletoledo/criptografiajs/blob/main/tela_projeto.png" alt="Screenshot app tela ao figma">
+
+
 ## Funcionalidades
 Criptografar texto substituindo letras conforme as regras estabelecidas.
 Descriptografar texto revertendo o processo de criptografia.
