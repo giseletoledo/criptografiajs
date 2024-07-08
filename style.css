@@ -84,6 +84,7 @@ textarea {
 small {
     margin-bottom: 20px;
     text-align: center;
+    word-break: break-word;
 }
 
 
