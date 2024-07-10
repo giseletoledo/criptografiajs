@@ -84,4 +84,5 @@ function transformText(text, mode) {
 inputTextElement.addEventListener('input', checkInput);
 
 // Inicialização
+inputTextElement.value = '';//limpar campo de texto
 checkInput();
